@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Create a new talon"|trans}}{% endblock %}
+
+{% block body %}
+    <center><h1>{{"Create a new talon"|trans}}</h1></center>
+
+    <div class="container">
+        {{ include('talons/_form.html.twig') }}
+    </div>
+
+    <br>
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('talons_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+{% endblock %}

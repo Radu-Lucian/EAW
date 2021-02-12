@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1><center>{{'Auto-Service'|trans}}</center></h1>
+    {# <div>
+        <a href="{{ path('cars_index') }}">Cars</a>
+        <a href="{{ path('inventory_items_index') }}">Invetory</a>
+        <a href="{{ path('mechanics_index') }}">Mechanics</a>
+        <a href="{{ path('notes_index') }}">Notes</a>
+        <a href="{{ path('progress_index') }}">Progress</a>
+        <a href="{{ path('users_index') }}">Users</a>
+        <a href="{{ path('talons_index') }}">Talons</a>
+        <a href="{{ path('user_tickets_index') }}">Tickets</a>
+        <a href="{{ path('user_tickets_mechanics_index') }}">Tickets_Mechanics</a>
+    </div> #}
+</div>
+{% endblock %}

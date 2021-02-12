@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Progress"|trans}}{% endblock %}
+
+{% block body %}
+    <br>
+    <center><h1>{{"Progress"|trans}}</h1></center>
+
+    <br>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{"Id"|trans}}</th>
+                <td>{{ progress.id }}</td>
+            </tr>
+            <tr>
+                <th>{{"State"|trans}}</th>
+                <td>{{ progress.state }}</td>
+            </tr>
+            <tr>
+                <th>{{"Estimation date"|trans}}</th>
+                <td>{{ progress.estimationDate ? progress.estimationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('progress_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+
+{% endblock %}

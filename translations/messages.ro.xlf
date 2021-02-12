@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="ro" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="login.welcome">
+                <source>Please sign in</source>
+                <target>Vă rugăm să vă conectați</target>
+            </trans-unit>
+            <trans-unit id="login.email">
+                <source>Email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="login.password">
+                <source>Password</source>
+                <target>Parolă</target>
+            </trans-unit>
+            <trans-unit id="login.signin">
+                <source>Sign in</source>
+                <target>Conectați-vă</target>
+            </trans-unit>
+            <trans-unit id="login.ro">
+                <source>Romanian</source>
+                <target>Română</target>
+            </trans-unit>
+            <trans-unit id="login.en">
+                <source>English</source>
+                <target>Engleză</target>
+            </trans-unit>
+            <trans-unit id="login.sign_out">
+                <source>Sign out</source>
+                <target>Deconectează-te</target>
+            </trans-unit>
+            <trans-unit id="index.welcome">
+                <source>Welcome!</source>
+                <target>Bine ați venit!</target>
+            </trans-unit>
+            <trans-unit id="menu.cars">
+                <source>Cars</source>
+                <target>Autoturisme</target>
+            </trans-unit>
+            <trans-unit id="menu.invetory">
+                <source>Invetory</source>
+                <target>Inventar</target>
+            </trans-unit>
+            <trans-unit id="menu.mechanics">
+                <source>Mechanics</source>
+                <target>Mecanici</target>
+            </trans-unit>
+            <trans-unit id="menu.notes">
+                <source>Notes</source>
+                <target>Note</target>
+            </trans-unit>
+            <trans-unit id="menu.progress">
+                <source>Progress</source>
+                <target>Progres</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>Users</source>
+                <target>Utilizatori</target>
+            </trans-unit>
+            <trans-unit id="menu.talons">
+                <source>Talons</source>
+                <target>Certificate de înmatriculare</target>
+            </trans-unit>
+            <trans-unit id="menu.tickets">
+                <source>Tickets</source>
+                <target>Tichete</target>
+            </trans-unit>
+            <trans-unit id="menu.tickets_mechanics">
+                <source>Tickets_Mechanics</source>
+                <target>Tichete_Mecanici</target>
+            </trans-unit>
+            <trans-unit id="title.auto_service">
+                <source>Auto-Service</source>
+                <target>Service Autoturisme</target>
+            </trans-unit>
+            <trans-unit id="all.show">
+                <source>Show info</source>
+                <target>Mai multă informație</target>
+            </trans-unit>
+            <trans-unit id="all.edit">
+                <source>Edit</source>
+                <target>Editați</target>
+            </trans-unit>
+            <trans-unit id="all.back_to_list">
+                <source>Back to list</source>
+                <target>Înapoi la listă</target>
+            </trans-unit>
+            <trans-unit id="all.delete">
+                <source>Delete</source>
+                <target>Șterge înregistrarea</target>
+            </trans-unit>
+            <trans-unit id="all.admin_controler">
+                <source>Admin controller</source>
+                <target>Control de administrator</target>
+            </trans-unit>
+            <trans-unit id="talon.plate">
+                <source>Registration plate</source>
+                <target>Număr de înamtriculare</target>
+            </trans-unit>
+            <trans-unit id="talon.vin">
+                <source>VIN</source>
+                <target>VIN</target>
+            </trans-unit>
+            <trans-unit id="talon.cc">
+                <source>CC</source>
+                <target>Capacitate cilindrică</target>
+            </trans-unit>
+             <trans-unit id="talon.registartion_year">
+                <source>Registartion year</source>
+                <target>Anul primei înmatriculări</target>
+            </trans-unit>
+            <trans-unit id="talon.expiration_date">
+                <source>Expiration date</source>
+                <target>Data expirării</target>
+            </trans-unit>
+            <trans-unit id="talon.related_car">
+                <source>Related to car</source>
+                <target>Mașina aparținătoare</target>
+            </trans-unit>
+            <trans-unit id="talon.actions">
+                <source>actions</source>
+                <target>Acțiuni</target>
+            </trans-unit>
+            <trans-unit id="talon.title">
+                <source>Your car related Talons</source>
+                <target>Certificatele de înamtriculare adăugate de dvs.</target>
+            </trans-unit>
+            <trans-unit id="talon.new">
+                <source>Add new talon</source>
+                <target>Adăugați un certificat de înamtriculare nou</target>
+            </trans-unit>
+            <trans-unit id="talon.no_records">
+                <source>no records found</source>
+                <target>nu au fost găsite înregistrări</target>
+            </trans-unit>
+            <trans-unit id="talon.index">
+                <source>Talons index</source>
+                <target>Certificate de înamtriculare</target>
+            </trans-unit>
+            <trans-unit id="talon.show">
+                <source>Ticket</source>
+                <target>Tichet</target>
+            </trans-unit>
+            <trans-unit id="talon.new_talon">
+                <source>Create a new talon</source>
+                <target>Adăugați un certificat de înmatriculare</target>
+            </trans-unit>
+            <trans-unit id="talon.edit_talon">
+                <source>Edit the selected talon</source>
+                <target>Editați certificatul de înmatriculare selectat</target>
+            </trans-unit>
+            <trans-unit id="car.make">
+                <source>Make</source>
+                <target>Marca mașinii</target>
+            </trans-unit>
+            <trans-unit id="car.model">
+                <source>Model</source>
+                <target>Modelul</target>
+            </trans-unit>
+            <trans-unit id="car.actions">
+                <source>actions</source>
+                <target>Acțiuni</target>
+            </trans-unit>
+            <trans-unit id="car.title">
+                <source>Your cars</source>
+                <target>Mașinile adăugate de dvs.</target>
+            </trans-unit>
+            <trans-unit id="car.new">
+                <source>Add new car</source>
+                <target>Adăugați o mașină nouă</target>
+            </trans-unit>
+            <trans-unit id="car.no_records">
+                <source>no records found</source>
+                <target>nu au fost găsite inregistrări</target>
+            </trans-unit>
+            <trans-unit id="car.index">
+                <source>Cars index</source>
+                <target>Mașini</target>
+            </trans-unit>
+            <trans-unit id="car.new_car">
+                <source>Add a new car</source>
+                <target>Adăugați o mașină nouă</target>
+            </trans-unit>
+            <trans-unit id="car.edit_car">
+                <source>Edit the selected car</source>
+                <target>Editați mașina selectată</target>
+            </trans-unit>
+            <trans-unit id="note.message">
+                <source>Message</source>
+                <target>Mesaj mecanic</target>
+            </trans-unit>
+            <trans-unit id="note.from_progress">
+                <source>From progress</source>
+                <target>Ține de progresul</target>
+            </trans-unit>
+            <trans-unit id="note.actions">
+                <source>actions</source>
+                <target>Acțiuni</target>
+            </trans-unit>
+            <trans-unit id="note.title">
+                <source>Notes responses regarding a progress from mechanics</source>
+                <target>Notițe de la mecanici cu privire la progres</target>
+            </trans-unit>
+            <trans-unit id="note.no_records">
+                <source>no records found</source>
+                <target>nu au fost găsite inregistrări</target>
+            </trans-unit>
+            <trans-unit id="note.index">
+                <source>Notes index</source>
+                <target>Note mecanici</target>
+            </trans-unit>
+            <trans-unit id="progress.state">
+                <source>State</source>
+                <target>Stare</target>
+            </trans-unit>
+            <trans-unit id="progress.estimation_date">
+                <source>Estimation date</source>
+                <target>Data estimată de rezolvare</target>
+            </trans-unit>
+            <trans-unit id="progress.user_ticket">
+                <source>From user ticket</source>
+                <target>Aparține de tichet-ul</target>
+            </trans-unit>
+            <trans-unit id="progress.actions">
+                <source>actions</source>
+                <target>Acțiuni</target>
+            </trans-unit>
+            <trans-unit id="progress.title">
+                <source>Progress responses from mechanics</source>
+                <target>Probleme raportate de mecanici</target>
+            </trans-unit>
+            <trans-unit id="progress.no_records">
+                <source>no records found</source>
+                <target>nu au fost găsite înregistrări</target>
+            </trans-unit>
+            <trans-unit id="progress.index">
+                <source>Progress index</source>
+                <target>Progres</target>
+            </trans-unit>
+
+            <trans-unit id="ticket.description">
+                <source>Description</source>
+                <target>Descriere</target>
+            </trans-unit>
+            <trans-unit id="ticket.date_started">
+                <source>Date started</source>
+                <target>Date raportării</target>
+            </trans-unit>
+            <trans-unit id="ticket.related_car">
+                <source>Related car</source>
+                <target>Mașina pentru care a fost deschis tichetul</target>
+            </trans-unit>
+            <trans-unit id="ticket.actions">
+                <source>actions</source>
+                <target>Acțiuni</target>
+            </trans-unit>
+            <trans-unit id="ticket.title">
+                <source>Your created Tickets</source>
+                <target>Tichetele create de dvs.</target>
+            </trans-unit>
+            <trans-unit id="ticket.no_records">
+                <source>no records found</source>
+                <target>nu au fost găsite înregistrări</target>
+            </trans-unit>
+            <trans-unit id="ticket.index">
+                <source>UserTickets index</source>
+                <target>Tichete</target>
+            </trans-unit>
+            <trans-unit id="ticket.new">
+                <source>Add new ticket</source>
+                <target>Adăugați un tichet nou</target>
+            </trans-unit>
+            <trans-unit id="ticket.new_ticket">
+                <source>Create a new ticket</source>
+                <target>Adăugați un tichet nou</target>
+            </trans-unit>
+            <trans-unit id="ticket.edit_ticket">
+                <source>Edit the selected ticket</source>
+                <target>Editați tichetul selectat</target>
+            </trans-unit>
+            <trans-unit id="all.car_name">
+                <source>Car</source>
+                <target>Mașina</target>
+            </trans-unit>
+            <trans-unit id="search.default">
+                <source>Enter your search key word.</source>
+                <target>Introduceți în motorul de căutare un cuvânt</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff> 

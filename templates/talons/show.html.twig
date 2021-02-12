@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Talons"|trans}}
+{% endblock %}
+
+{% block body %}
+    <br>
+	<center>
+		<h1>{{"Talons"|trans}}</h1>
+	</center>
+
+    <br>
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>{{"Id"|trans}}</th>
+				<td>{{ talon.id }}</td>
+			</tr>
+			<tr>
+				<th>{{"Registration plate"|trans}}</th>
+				<td>{{ talon.registrationPlate }}</td>
+			</tr>
+			<tr>
+				<th>{{"VIN"|trans}}</th>
+				<td>{{ talon.vin }}</td>
+			</tr>
+			<tr>
+				<th>{{"CC"|trans}}</th>
+				<td>{{ talon.cc }}</td>
+			</tr>
+			<tr>
+				<th>{{"Registartion year"|trans}}</th>
+				<td>{{ talon.registartionYear ? talon.registartionYear|date('Y-m-d H:i:s') : '' }}</td>
+			</tr>
+			<tr>
+				<th>{{"Expiration date"|trans}}</th>
+				<td>{{ talon.expirationDate ? talon.expirationDate|date('Y-m-d H:i:s') : '' }}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('talons_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+	<center>
+		<button class="btn btn-warning" type="button" onclick="location.href='{{ path('talons_edit', {'id': talon.id}) }}'">{{"Edit"|trans}}</button>
+	</center>
+
+    <br>
+	{{ include('talons/_delete_form.html.twig') }}
+{% endblock %}

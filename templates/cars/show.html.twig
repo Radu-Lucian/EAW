@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{"Cars"|trans}}
+{% endblock %}
+
+{% block body %}
+    <br>
+	<h1>
+		<center>{{"Cars"|trans}}</center>
+	</h1>
+
+    <br>
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>{{"Id"|trans}}</th>
+				<td>{{ car.id }}</td>
+			</tr>
+			<tr>
+				<th>{{"Make"|trans}}</th>
+				<td>{{ car.make }}</td>
+			</tr>
+			<tr>
+				<th>{{"Model"|trans}}</th>
+				<td>{{ car.model }}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('cars_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+	<center>
+		<button class="btn btn-warning" type="button" onclick="location.href='{{ path('cars_edit', {'id': car.id}) }}'">{{"Edit"|trans}}</button>
+	</center>
+    
+    <br>
+	{{ include('cars/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Talons index{% endblock %}
+
+{% block body %}
+    <h1>Talons index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Registration_plate</th>
+                <th>Vin</th>
+                <th>Cc</th>
+                <th>Registartion_year</th>
+                <th>Expiration_date</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for talon in talons %}
+            <tr>
+                <td>{{ talon.id }}</td>
+                <td>{{ talon.registrationPlate }}</td>
+                <td>{{ talon.vin }}</td>
+                <td>{{ talon.cc }}</td>
+                <td>{{ talon.registartionYear ? talon.registartionYear|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ talon.expirationDate ? talon.expirationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('talons_show', {'id': talon.id}) }}">show</a>
+                    <a href="{{ path('talons_edit', {'id': talon.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('talons_new') }}">Create new</a>
+{% endblock %}

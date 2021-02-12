@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Create a new ticket"|trans}}{% endblock %}
+
+{% block body %}
+    <center><h1>{{"Create a new ticket"|trans}}</h1></center>
+
+    <div class="container">
+        {{ include('user_tickets/_form.html.twig') }}
+    </div>
+
+    <br>
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('user_tickets_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+{% endblock %}

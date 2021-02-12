@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}UserTickets index{% endblock %}
+
+{% block body %}
+    <h1>UserTickets index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Description</th>
+                <th>Date_started</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user_ticket in user_tickets %}
+            <tr>
+                <td>{{ user_ticket.id }}</td>
+                <td>{{ user_ticket.description }}</td>
+                <td>{{ user_ticket.dateStarted ? user_ticket.dateStarted|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('user_tickets_show', {'id': user_ticket.id}) }}">show</a>
+                    <a href="{{ path('user_tickets_edit', {'id': user_ticket.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('user_tickets_new') }}">Create new</a>
+{% endblock %}

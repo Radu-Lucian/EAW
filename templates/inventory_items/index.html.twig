@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}InventoryItems index{% endblock %}
+
+{% block body %}
+    <h1>InventoryItems index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Serial_number</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for inventory_item in inventory_items %}
+            <tr>
+                <td>{{ inventory_item.id }}</td>
+                <td>{{ inventory_item.name }}</td>
+                <td>{{ inventory_item.description }}</td>
+                <td>{{ inventory_item.price }}</td>
+                <td>{{ inventory_item.serialNumber }}</td>
+                <td>
+                    <a href="{{ path('inventory_items_show', {'id': inventory_item.id}) }}">show</a>
+                    <a href="{{ path('inventory_items_edit', {'id': inventory_item.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('inventory_items_new') }}">Create new</a>
+{% endblock %}

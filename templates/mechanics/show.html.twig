@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mechanics{% endblock %}
+
+{% block body %}
+    <h1>Mechanics</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ mechanic.id }}</td>
+            </tr>
+            <tr>
+                <th>Specialization</th>
+                <td>{{ mechanic.specialization }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('mechanics_index') }}">back to list</a>
+
+    <a href="{{ path('mechanics_edit', {'id': mechanic.id}) }}">edit</a>
+
+    {{ include('mechanics/_delete_form.html.twig') }}
+{% endblock %}

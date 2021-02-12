@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New UserTicketsMechanics{% endblock %}
+
+{% block body %}
+    <h1>Create new UserTicketsMechanics</h1>
+
+    {{ include('user_tickets_mechanics/_form.html.twig') }}
+
+    <a href="{{ path('user_tickets_mechanics_index') }}">back to list</a>
+{% endblock %}

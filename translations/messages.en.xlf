@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="login.welcome">
+                <source>Please sign in</source>
+                <target>Please sign in</target>
+            </trans-unit>
+            <trans-unit id="login.email">
+                <source>Email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="login.password">
+                <source>Password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="login.signin">
+                <source>Sign in</source>
+                <target>Sign in</target>
+            </trans-unit>
+            <trans-unit id="login.ro">
+                <source>Romanian</source>
+                <target>Romanian</target>
+            </trans-unit>
+            <trans-unit id="login.en">
+                <source>English</source>
+                <target>English</target>
+            </trans-unit>
+            <trans-unit id="login.sign_out">
+                <source>Sign out</source>
+                <target>Sign out</target>
+            </trans-unit>
+            <trans-unit id="index.welcome">
+                <source>Welcome!</source>
+                <target>Welcome!</target>
+            </trans-unit>
+            <trans-unit id="menu.cars">
+                <source>Cars</source>
+                <target>Cars</target>
+            </trans-unit>
+            <trans-unit id="menu.invetory">
+                <source>Invetory</source>
+                <target>Invetory</target>
+            </trans-unit>
+            <trans-unit id="menu.mechanics">
+                <source>Mechanics</source>
+                <target>Mechanics</target>
+            </trans-unit>
+            <trans-unit id="menu.notes">
+                <source>Notes</source>
+                <target>Notes</target>
+            </trans-unit>
+            <trans-unit id="menu.progress">
+                <source>Progress</source>
+                <target>Progress</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>Users</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="menu.talons">
+                <source>Talons</source>
+                <target>Talons</target>
+            </trans-unit>
+            <trans-unit id="menu.tickets">
+                <source>Tickets</source>
+                <target>Tickets</target>
+            </trans-unit>
+            <trans-unit id="menu.tickets_mechanics">
+                <source>Tickets_Mechanics</source>
+                <target>Tickets_Mechanics</target>
+            </trans-unit>
+            <trans-unit id="title.auto_service">
+                <source>Auto-Service</source>
+                <target>Auto-Service</target>
+            </trans-unit>
+            <trans-unit id="all.show">
+                <source>Show info</source>
+                <target>Show info</target>
+            </trans-unit>
+            <trans-unit id="all.edit">
+                <source>Edit</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="all.back_to_list">
+                <source>Back to list</source>
+                <target>Back to list</target>
+            </trans-unit>
+            <trans-unit id="all.delete">
+                <source>Delete</source>
+                <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="all.admin_controler">
+                <source>Admin controller</source>
+                <target>Admin controller</target>
+            </trans-unit>
+            <trans-unit id="talon.plate">
+                <source>Registration plate</source>
+                <target>Registration plate</target>
+            </trans-unit>
+            <trans-unit id="talon.vin">
+                <source>VIN</source>
+                <target>VIN</target>
+            </trans-unit>
+            <trans-unit id="talon.cc">
+                <source>CC</source>
+                <target>CC</target>
+            </trans-unit>
+            <trans-unit id="talon.registartion_year">
+                <source>Registartion year</source>
+                <target>Registartion year</target>
+            </trans-unit>
+            <trans-unit id="talon.expiration_date">
+                <source>Expiration date</source>
+                <target>Expiration date</target>
+            </trans-unit>
+            <trans-unit id="talon.related_car">
+                <source>Related to car</source>
+                <target>Related to car</target>
+            </trans-unit>
+            <trans-unit id="talon.actions">
+                <source>actions</source>
+                <target>actions</target>
+            </trans-unit>
+            <trans-unit id="talon.title">
+                <source>Your car related Talons</source>
+                <target>Your car related Talons</target>
+            </trans-unit>
+            <trans-unit id="talon.new">
+                <source>Add new talon</source>
+                <target>Add new talon</target>
+            </trans-unit>
+            <trans-unit id="talon.no_records">
+                <source>no records found</source>
+                <target>no records found</target>
+            </trans-unit>
+            <trans-unit id="talon.index">
+                <source>Talons index</source>
+                <target>Talons index</target>
+            </trans-unit>
+            <trans-unit id="talon.show">
+                <source>Ticket</source>
+                <target>Ticket</target>
+            </trans-unit>
+            <trans-unit id="talon.new_talon">
+                <source>Create a new talon</source>
+                <target>Create a new talon</target>
+            </trans-unit>
+            <trans-unit id="talon.edit_talon">
+                <source>Edit the selected talon</source>
+                <target>Edit the selected talon</target>
+            </trans-unit>
+            <trans-unit id="car.make">
+                <source>Make</source>
+                <target>Make</target>
+            </trans-unit>
+            <trans-unit id="car.model">
+                <source>Model</source>
+                <target>Model</target>
+            </trans-unit>
+            <trans-unit id="car.actions">
+                <source>actions</source>
+                <target>actions</target>
+            </trans-unit>
+            <trans-unit id="car.title">
+                <source>Your cars</source>
+                <target>Your cars</target>
+            </trans-unit>
+            <trans-unit id="car.new">
+                <source>Add new car</source>
+                <target>Add new car</target>
+            </trans-unit>
+            <trans-unit id="car.no_records">
+                <source>no records found</source>
+                <target>no records found</target>
+            </trans-unit>
+            <trans-unit id="car.index">
+                <source>Cars index</source>
+                <target>Cars index</target>
+            </trans-unit>
+            <trans-unit id="car.new_car">
+                <source>Add a new car</source>
+                <target>Add a new car</target>
+            </trans-unit>
+            <trans-unit id="car.edit_car">
+                <source>Edit the selected car</source>
+                <target>Edit the selected car</target>
+            </trans-unit>
+            <trans-unit id="note.message">
+                <source>Message</source>
+                <target>Message</target>
+            </trans-unit>
+            <trans-unit id="note.from_progress">
+                <source>From progress</source>
+                <target>From progress</target>
+            </trans-unit>
+            <trans-unit id="note.actions">
+                <source>actions</source>
+                <target>actions</target>
+            </trans-unit>
+            <trans-unit id="note.title">
+                <source>Notes responses regarding a progress from mechanics</source>
+                <target>Notes responses regarding a progress from mechanics</target>
+            </trans-unit>
+            <trans-unit id="note.no_records">
+                <source>no records found</source>
+                <target>no records found</target>
+            </trans-unit>
+            <trans-unit id="note.index">
+                <source>Notes index</source>
+                <target>Notes index</target>
+            </trans-unit>
+            <trans-unit id="progress.state">
+                <source>State</source>
+                <target>State</target>
+            </trans-unit>
+            <trans-unit id="progress.estimation_date">
+                <source>Estimation date</source>
+                <target>Estimation date</target>
+            </trans-unit>
+            <trans-unit id="progress.user_ticket">
+                <source>From user ticket</source>
+                <target>From user ticket</target>
+            </trans-unit>
+            <trans-unit id="progress.actions">
+                <source>actions</source>
+                <target>actions</target>
+            </trans-unit>
+            <trans-unit id="progress.title">
+                <source>Progress responses from mechanics</source>
+                <target>Progress responses from mechanics</target>
+            </trans-unit>
+            <trans-unit id="progress.no_records">
+                <source>no records found</source>
+                <target>no records found</target>
+            </trans-unit>
+            <trans-unit id="progress.index">
+                <source>Progress index</source>
+                <target>Progress index</target>
+            </trans-unit>
+            <trans-unit id="ticket.description">
+                <source>Description</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="ticket.date_started">
+                <source>Date started</source>
+                <target>Date started</target>
+            </trans-unit>
+            <trans-unit id="ticket.related_car">
+                <source>Related car</source>
+                <target>Related car</target>
+            </trans-unit>
+            <trans-unit id="ticket.actions">
+                <source>actions</source>
+                <target>actions</target>
+            </trans-unit>
+            <trans-unit id="ticket.title">
+                <source>Your created Tickets</source>
+                <target>Your created Tickets</target>
+            </trans-unit>
+            <trans-unit id="ticket.no_records">
+                <source>no records found</source>
+                <target>no records found</target>
+            </trans-unit>
+            <trans-unit id="ticket.index">
+                <source>UserTickets index</source>
+                <target>UserTickets index</target>
+            </trans-unit>
+            <trans-unit id="ticket.new">
+                <source>Add new ticket</source>
+                <target>Add new ticket</target>
+            </trans-unit>
+            <trans-unit id="ticket.new_ticket">
+                <source>Create a new ticket</source>
+                <target>Create a new ticket</target>
+            </trans-unit>
+            <trans-unit id="ticket.edit_ticket">
+                <source>Edit the selected ticket</source>
+                <target>Edit the selected ticket</target>
+            </trans-unit>
+            <trans-unit id="all.car_name">
+                <source>Car</source>
+                <target>Car</target>
+            </trans-unit>
+            <trans-unit id="search.default">
+                <source>Enter your search key word.</source>
+                <target>Enter your search key word.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff> 

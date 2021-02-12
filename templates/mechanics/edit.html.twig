@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Mechanics{% endblock %}
+
+{% block body %}
+    <h1>Edit Mechanics</h1>
+
+    {{ include('mechanics/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('mechanics_index') }}">back to list</a>
+
+    {{ include('mechanics/_delete_form.html.twig') }}
+{% endblock %}

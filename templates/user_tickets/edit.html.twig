@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Edit the selected ticket"|trans}}{% endblock %}
+
+{% block body %}
+    <center><h1>{{"Edit the selected ticket"|trans}}</h1></center>
+
+    <div class="container">
+        {{ include('user_tickets/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
+
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('user_tickets_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+
+    <br>
+    {{ include('user_tickets/_delete_form.html.twig') }}
+{% endblock %}

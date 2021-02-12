@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ticket"|trans}}
+{% endblock %}
+
+{% block body %}
+    <br>
+	<center>
+		<h1>{{"Ticket"|trans}}</h1>
+	</center>
+
+    <br>
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>{{"Id"|trans}}</th>
+				<td>{{ user_ticket.id }}</td>
+			</tr>
+			<tr>
+				<th>{{"Description"|trans}}</th>
+				<td>{{ user_ticket.description }}</td>
+			</tr>
+			<tr>
+				<th>{{"Date started"|trans}}</th>
+				<td>{{ user_ticket.dateStarted ? user_ticket.dateStarted|date('Y-m-d H:i:s') : '' }}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('user_tickets_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+    <br>
+	{{ include('user_tickets/_delete_form.html.twig') }}
+{% endblock %}

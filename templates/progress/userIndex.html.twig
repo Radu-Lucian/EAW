@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Progress index"|trans}}{% endblock %}
+
+{% block body %}
+    <br>
+    <h1><center>{{"Progress responses from mechanics"|trans}}</center></h1>
+
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{"Id"|trans}}</th>
+                <th>{{"State"|trans}}</th>
+                <th>{{"Estimation date"|trans}}</th>
+                <th>{{"From user ticket"|trans}}</th>
+                <th>{{"actions"|trans}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for progress in progress %}
+            <tr>
+                <td>{{ progress.id }}</td>
+                <td>{{ progress.state }}</td>
+                <td>{{ progress.estimationDate ? progress.estimationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('user_tickets_show', {'id': progress.FKProgressUserTicketId.id}) }}'">{{ progress.FKProgressUserTicketId }}
+                </td>
+                <td>
+                    <button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('progress_show', {'id': progress.id}) }}'">{{"Show info"|trans}}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">{{"no records found"|trans}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Talons index"|trans}}{% endblock %}
+
+{% block body %}
+    <br>
+    <h1><center>{{"Your car related Talons"|trans}}</center></h1>
+    
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{"Id"|trans}}</th>
+                <th>{{"Registration plate"|trans}}</th>
+                <th>{{"VIN"|trans}}</th>
+                <th>{{"CC"|trans}}</th>
+                <th>{{"Registartion year"|trans}}</th>
+                <th>{{"Expiration date"|trans}}</th>
+                <th>{{"Related to car"|trans}}</th>
+                <th>{{"actions"|trans}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for talon in talons %}
+            <tr>
+                <td>{{ talon.id }}</td>
+                <td>{{ talon.registrationPlate }}</td>
+                <td>{{ talon.vin }}</td>
+                <td>{{ talon.cc }}</td>
+                <td>{{ talon.registartionYear ? talon.registartionYear|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ talon.expirationDate ? talon.expirationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('talons_show', {'id': talon.FKTalonCarId.id}) }}'">{{ talon.FKTalonCarId }}
+                </td>
+                <td>
+                    <button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('talons_show', {'id': talon.id}) }}'">{{"Show info"|trans}}</button>
+                    <button class="btn btn-warning" type="button" onclick="location.href='{{ path('talons_edit', {'id': talon.id}) }}'">{{"Edit"|trans}}</button>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">{{"no records found"|trans}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <br>
+    <center><button class="btn btn-success" type="button" onclick="location.href='{{ path('talons_new') }}'">{{"Add new talon"|trans}}</a></center>
+{% endblock %}

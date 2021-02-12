@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Notes"|trans}}{% endblock %}
+
+{% block body %}
+    <br>
+    <center><h1>{{"Notes"|trans}}</h1></center>
+
+    <br>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>{{"Id"|trans}}</th>
+                <td>{{ note.id }}</td>
+            </tr>
+            <tr>
+                <th>{{"Message"|trans}}</th>
+                <td>{{ note.message }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('notes_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+
+{% endblock %}

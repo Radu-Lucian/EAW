@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Edit the selected talon"|trans}}{% endblock %}
+
+{% block body %}
+    <center><h1>{{"Edit the selected talon"|trans}}</h1></center>
+
+    <div class="container">
+        {{ include('talons/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
+
+    <center>
+		<button class="btn btn-outline-secondary" type="button" onclick="location.href='{{ path('talons_index') }}'">{{"Back to list"|trans}}</button>
+	</center>
+
+    <br>
+    {{ include('talons/_delete_form.html.twig') }}
+{% endblock %}

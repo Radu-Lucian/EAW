@@ -1,0 +1,12 @@
+easy_admin:
+   entities:
+       # List the entity class name you want to manage
+       - App\Entity\Cars
+       - App\Entity\InventoryItems
+       - App\Entity\Mechanics
+       - App\Entity\UserTicketsMechanics
+       - App\Entity\Notes
+       - App\Entity\Progress
+       - App\Entity\Talons
+       - App\Entity\Users
+       - App\Entity\UserTickets
